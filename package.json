@@ -1,0 +1,21 @@
+{
+  "name": "sdlc-website",
+  "version": "0.0.0",
+  "description": "Example express, node, karma, project",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start test/unit/karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DPS-Scrummers/sdlc-website.git"
+  },
+  "author": "Bobby Rockers <bob@ai-sys.com> (http://github.com/AutomationIntegrated)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/DPS-Scrummers/sdlc-website/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3"
+  }
+}
