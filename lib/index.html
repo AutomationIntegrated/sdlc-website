@@ -2,15 +2,22 @@
 <html>
 <head>
 	<title>This is my first website</title>
-	<script type="test/javascript" src="/app.js"></script>
+	<script type="text/javascript" src="/app.js"></script>
 	<script type="text/javascript">
-      function onLoad() {
-        document.getElementById('content').innerHTML = theAnswer();
-      }
-    </script>
-  </head>
-  <body onload="onLoad()">
-  <h3>Welcome to my website</h3>
+			function onLoad() {
+				var list = myList();
+				var content = document.getElementById('content');
+
+				content.innerHTML = "<ul>";
+				for(var i = 0; i < list.length;i++){
+					content.innerHTML += "<li>" + list[i] + "</li>";
+				}
+				content.innerHTML += "</ul>";
+			}
+		</script>
+	</head>
+	<body onload="onLoad()">
+	<h3>Welcome to my website</h3>
 	<div id="content"></div>
 </body>
 </html>
